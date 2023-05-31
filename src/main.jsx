@@ -2,7 +2,16 @@
 import { createRoot } from 'react-dom/client'
 
 import './index.css'
-const app = <h1> Desarrollo util</h1>
+
+const Title = (props) => {
+	return <h2 className='Title'> {props.children}</h2>
+}
+
+const app = (
+	<div>
+		<Title>Desarrollo</Title>
+	</div>
+)
 // const container = document.getElementById("root");
 // ReactDOM.render(app, container);
 
